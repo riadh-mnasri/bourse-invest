@@ -47,7 +47,7 @@ export function ArticleShell({
       </h1>
       <p className="mt-3 text-muted-foreground">{meta.summary[locale]}</p>
 
-      <article className="prose prose-neutral mt-10 max-w-none">
+      <article className="prose prose-neutral prose-lg mt-10 max-w-none">
         {locale === "fr" ? fr : en}
       </article>
 

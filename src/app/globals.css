@@ -42,62 +42,62 @@
 }
 
 /*
- * Palette "papier chaud / vert foret + terracotta" : cru et charbon-vert en
- * clair, vert-noir profond et ivoire en sombre, accent terracotta en aplat
- * (jamais de degrade). Choisie pour rester distincte de finance-for-engineers
- * (ivoire/marine/or) et eviter le cliche indigo/violet des interfaces
- * generees par IA.
+ * Palette "lin chaud / bordeaux + sarcelle" : lin et bordeaux profond en
+ * clair, encre chaude et rose-bordeaux lumineux en sombre, sarcelle en
+ * second accent (jamais de dégradé). Choisie pour rester distincte de
+ * finance-for-engineers (ivoire/marine/or) et éviter le cliché indigo/violet
+ * des interfaces générées par IA.
  */
 :root,
 :root[data-theme="light"] {
-  --background: #f5f0e3;
-  --foreground: #1b241a;
-  --card: #fffcf5;
-  --card-foreground: #1b241a;
-  --primary: #2f5233;
-  --primary-foreground: #f5f0e3;
-  --secondary: #b0542d;
-  --secondary-foreground: #fff6ef;
-  --muted: #ece3cf;
-  --muted-foreground: #665f4f;
-  --accent: #ece3cf;
-  --accent-foreground: #1b241a;
+  --background: #f7f1e7;
+  --foreground: #271a1d;
+  --card: #fffcf6;
+  --card-foreground: #271a1d;
+  --primary: #7a2038;
+  --primary-foreground: #fdf0ee;
+  --secondary: #1f5c5a;
+  --secondary-foreground: #eafaf6;
+  --muted: #ece1d0;
+  --muted-foreground: #6b5f52;
+  --accent: #ece1d0;
+  --accent-foreground: #271a1d;
   --destructive: #a33b2b;
   --destructive-foreground: #fff5f2;
-  --border: #ddd0ab;
-  --input: #ddd0ab;
-  --ring: #2f5233;
-  --chart-1: #2f5233;
-  --chart-2: #b0542d;
-  --chart-3: #7c8a6e;
-  --chart-4: #6b8f71;
-  --chart-5: #d99a5b;
+  --border: #ddccb2;
+  --input: #ddccb2;
+  --ring: #7a2038;
+  --chart-1: #7a2038;
+  --chart-2: #1f5c5a;
+  --chart-3: #b8894a;
+  --chart-4: #8a6a7a;
+  --chart-5: #4f8a86;
   --radius: 0.75rem;
 }
 
 :root[data-theme="dark"] {
-  --background: #10160f;
-  --foreground: #ece4d3;
-  --card: #161d14;
-  --card-foreground: #ece4d3;
-  --primary: #79b57e;
-  --primary-foreground: #0e1a0f;
-  --secondary: #e2895a;
-  --secondary-foreground: #1f0f08;
-  --muted: #1d2519;
-  --muted-foreground: #a09b8a;
-  --accent: #1d2519;
-  --accent-foreground: #ece4d3;
+  --background: #170f10;
+  --foreground: #f1e5d6;
+  --card: #221518;
+  --card-foreground: #f1e5d6;
+  --primary: #dd6485;
+  --primary-foreground: #260a12;
+  --secondary: #52b7ae;
+  --secondary-foreground: #072220;
+  --muted: #2b1a1d;
+  --muted-foreground: #b3a494;
+  --accent: #2b1a1d;
+  --accent-foreground: #f1e5d6;
   --destructive: #e2685c;
   --destructive-foreground: #1a1200;
-  --border: #2b3427;
-  --input: #2b3427;
-  --ring: #79b57e;
-  --chart-1: #79b57e;
-  --chart-2: #e2895a;
-  --chart-3: #a09b8a;
-  --chart-4: #3f5a43;
-  --chart-5: #f0c186;
+  --border: #3c262a;
+  --input: #3c262a;
+  --ring: #dd6485;
+  --chart-1: #dd6485;
+  --chart-2: #52b7ae;
+  --chart-3: #d3aa6c;
+  --chart-4: #a9899a;
+  --chart-5: #3f7d78;
 }
 
 @layer base {
@@ -117,8 +117,8 @@
 }
 
 @layer utilities {
-  /* Motif discret de fond (rangees espacees), evoque une progression sans
-     graphique litteral, utilise sur la hero */
+  /* Motif discret de fond (rangées espacées), évoque une progression sans
+     graphique littéral, utilisé sur la hero */
   .bg-grove {
     background-image: repeating-linear-gradient(
       90deg,
@@ -166,6 +166,35 @@
 .prose h4 {
   font-family: var(--font-serif);
   letter-spacing: -0.01em;
+}
+
+.prose h2 {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.prose h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 4px;
+  border-radius: 999px;
+  background: var(--secondary);
+}
+
+.prose blockquote {
+  border-left-color: var(--secondary);
+  background: color-mix(in oklab, var(--secondary) 8%, transparent);
+  border-radius: 0 0.6rem 0.6rem 0;
+  padding: 0.9rem 1.25rem;
+  font-style: normal;
+}
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+  content: "";
 }
 
 .prose table {
