@@ -5,6 +5,14 @@ import { ModuleIndex } from "@/components/content/ModuleIndex";
 import { meta as quEstCeQuUnMarche } from "@/content/les-bases/qu-est-ce-qu-un-marche-financier/meta";
 import { meta as actionsObligationsEtf } from "@/content/les-bases/actions-obligations-etf/meta";
 import { meta as risqueDeMarche } from "@/content/les-bases/risque-de-marche-vs-perte-permanente/meta";
+import { translate } from "@/lib/i18n/dictionaries";
+import { buildModuleMetadata } from "@/lib/seo";
+
+export const metadata = buildModuleMetadata(
+  translate("fr", "module.marches.title"),
+  translate("fr", "module.marches.intro"),
+  "/les-bases"
+);
 
 export default function Page() {
   return (

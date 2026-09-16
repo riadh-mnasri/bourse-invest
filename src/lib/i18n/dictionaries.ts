@@ -44,6 +44,8 @@ const dictionaries = {
     "footer.disclaimer":
       "BourseInvest est un site pédagogique indépendant. Rien ici ne constitue un conseil en investissement personnalisé au sens de la réglementation AMF. Investir comporte un risque de perte en capital.",
     "footer.rights": "Tous droits réservés.",
+    "footer.by": "Un site de",
+    "footer.linkedin": "LinkedIn",
   },
   en: {
     "site.title": "BourseInvest",
@@ -81,6 +83,8 @@ const dictionaries = {
     "footer.disclaimer":
       "BourseInvest is an independent educational site. Nothing here constitutes personalized investment advice. Investing carries a risk of capital loss.",
     "footer.rights": "All rights reserved.",
+    "footer.by": "A site by",
+    "footer.linkedin": "LinkedIn",
   },
 } as const;
 

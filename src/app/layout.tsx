@@ -8,7 +8,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import { AppHeader } from "@/components/AppHeader";
 import { AppFooter } from "@/components/AppFooter";
+import { SiteJsonLd } from "@/components/seo/SiteJsonLd";
 import { LocaleProvider } from "@/lib/i18n";
+import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/seo";
 import { THEME_BOOTSTRAP_SCRIPT } from "@/lib/theme";
 import "./globals.css";
 
@@ -28,10 +30,20 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bourse-invest.vercel.app"),
-  title: "BourseInvest: comprendre avant d'investir",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "BourseInvest: comprendre avant d'investir",
+    template: "%s | BourseInvest",
+  },
   description:
     "Guide pedagogique bilingue (FR/EN) sur les bases de la bourse, la fiscalite de l'investissement en France (PEA, CTO, assurance-vie) et la construction d'une routine d'investisseur saine.",
+  authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
+  openGraph: {
+    siteName: "BourseInvest",
+    type: "website",
+    locale: "fr_FR",
+    alternateLocale: "en_US",
+  },
 };
 
 export default function RootLayout({
@@ -47,6 +59,7 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP_SCRIPT }} />
+        <SiteJsonLd />
       </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <LocaleProvider>

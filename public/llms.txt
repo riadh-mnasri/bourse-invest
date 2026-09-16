@@ -1,0 +1,35 @@
+# BourseInvest
+
+> Guide pedagogique bilingue (francais/anglais) sur les bases de la bourse, la fiscalite de l'investissement en France (PEA, compte-titres ordinaire, assurance-vie) et la construction d'une routine d'investisseur saine. Contenu editorial independant, pas un outil de suivi de portefeuille, pas un conseil en investissement personnalise.
+
+Auteur : Riadh MNASRI ([https://riadhmnasri.fr](https://riadhmnasri.fr), [LinkedIn](https://www.linkedin.com/in/riadhmnasri)).
+
+## Les bases des marches
+
+- [Qu'est-ce qu'un marche financier](https://bourse-invest.vercel.app/les-bases/qu-est-ce-qu-un-marche-financier) : marche primaire vs secondaire, formation des prix, liquidite.
+- [Actions, obligations, ETF](https://bourse-invest.vercel.app/les-bases/actions-obligations-etf) : profils de risque et de rendement des trois instruments de base.
+- [Risque de marche vs perte permanente](https://bourse-invest.vercel.app/les-bases/risque-de-marche-vs-perte-permanente) : le concept central du site, distinguer volatilite temporaire et perte definitive.
+
+## Les enveloppes fiscales francaises
+
+- [PEA, CTO, assurance-vie : vue d'ensemble](https://bourse-invest.vercel.app/enveloppes-fiscales/vue-d-ensemble-pea-cto-assurance-vie) : ce que permet chaque enveloppe.
+- [Le PEA en detail](https://bourse-invest.vercel.app/enveloppes-fiscales/le-pea-en-detail) : eligibilite UE, plafond, regle des 5 ans, replication synthetique et risque de contrepartie.
+- [Le compte-titres en complement](https://bourse-invest.vercel.app/enveloppes-fiscales/le-cto-en-complement) : ce que le PEA ne permet pas, fiscalite flat tax.
+
+## Construire une routine d'investisseur
+
+- [Allocation core-satellite](https://bourse-invest.vercel.app/routine-d-investisseur/allocation-core-satellite) : separer un coeur indiciel large d'un satellite plafonne.
+- [DCA et versements programmes](https://bourse-invest.vercel.app/routine-d-investisseur/dca-et-versements-programmes) : investissement automatise a intervalle regulier.
+- [Les biais qui coutent le plus cher](https://bourse-invest.vercel.app/routine-d-investisseur/biais-comportementaux) : vente de panique, course a la performance passee, sur-diversification.
+
+## Conseils des classiques
+
+- [Actifs vs passifs](https://bourse-invest.vercel.app/conseils/actifs-vs-passifs) : d'apres Pere riche, pere pauvre (Robert Kiyosaki).
+- [Le bon sens de l'indiciel](https://bourse-invest.vercel.app/conseils/le-bon-sens-de-l-indiciel) : d'apres The Little Book of Common Sense Investing (John C. Bogle).
+- [La psychologie de l'argent](https://bourse-invest.vercel.app/conseils/la-psychologie-de-l-argent) : d'apres The Psychology of Money (Morgan Housel).
+
+## Reference
+
+- [Glossaire](https://bourse-invest.vercel.app/glossaire) : definitions des termes cles utilises sur le site.
+
+Chaque page existe en francais et en anglais (bascule cote client, meme URL). Le francais est la langue de reference du contenu.

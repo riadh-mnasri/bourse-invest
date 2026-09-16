@@ -5,6 +5,14 @@ import { ModuleIndex } from "@/components/content/ModuleIndex";
 import { meta as vueDEnsemble } from "@/content/enveloppes-fiscales/vue-d-ensemble-pea-cto-assurance-vie/meta";
 import { meta as peaEnDetail } from "@/content/enveloppes-fiscales/le-pea-en-detail/meta";
 import { meta as ctoEnComplement } from "@/content/enveloppes-fiscales/le-cto-en-complement/meta";
+import { translate } from "@/lib/i18n/dictionaries";
+import { buildModuleMetadata } from "@/lib/seo";
+
+export const metadata = buildModuleMetadata(
+  translate("fr", "module.enveloppes.title"),
+  translate("fr", "module.enveloppes.intro"),
+  "/enveloppes-fiscales"
+);
 
 export default function Page() {
   return (

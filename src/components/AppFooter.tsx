@@ -6,6 +6,7 @@
 "use client";
 
 import { useLocale } from "@/lib/i18n";
+import { AUTHOR_NAME, AUTHOR_URL, LINKEDIN_URL } from "@/lib/seo";
 
 export function AppFooter() {
   const { t } = useLocale();
@@ -19,7 +20,17 @@ export function AppFooter() {
       <div className="mx-auto max-w-5xl px-4">
         <p className="mb-3 max-w-2xl">{t("footer.disclaimer")}</p>
         <p>
-          © {year} Riadh MNASRI. {t("footer.rights")}
+          © {year} {AUTHOR_NAME}. {t("footer.rights")}
+        </p>
+        <p className="mt-1">
+          {t("footer.by")}{" "}
+          <a href={AUTHOR_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+            {AUTHOR_NAME}
+          </a>
+          {" · "}
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+            {t("footer.linkedin")}
+          </a>
         </p>
       </div>
     </footer>
