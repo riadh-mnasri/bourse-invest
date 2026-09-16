@@ -1,0 +1,38 @@
+The PEA is the wrapper most used by French individual investors, often without its precise rules being well understood. Three points are worth mastering before putting another euro into one.
+
+## Eligibility: only EU securities held directly
+
+A PEA can only directly hold shares of companies headquartered in the European Union (or the European Economic Area under conditions). Concretely: no direct Apple, Microsoft or Nvidia stock inside a PEA.
+
+That seems to rule out any exposure to US or Asian markets, but it doesn't, thanks to the synthetic replication mechanism covered below.
+
+## Cap and holding period
+
+The contribution cap is set at €150,000 (gains above this don't count toward the cap, only actual contributions do). The PEA must be held for at least 5 years to benefit from the capital gains tax exemption (the 17.2% social contributions still apply regardless). A withdrawal before 5 years closes the plan in most cases and forfeits the accrued tax benefit.
+
+<Callout tone="warning">
+An early withdrawal isn't just "less advantageous", it generally closes the entire plan. This isn't an account you dip into occasionally without consequence: it's designed to be held over the long term.
+</Callout>
+
+## The point almost nobody knows: synthetic replication
+
+This is the most important point in this article, directly relevant to whatever is probably in your PEA if you hold a World or S&P 500 ETF.
+
+Since US stocks aren't directly eligible in a PEA, how can an "S&P 500" or "MSCI World" ETF (which is roughly 70% US companies) exist inside this wrapper at all? Through a structure called **synthetic replication**: the fund actually holds a basket of PEA-eligible European securities (often unrelated to the target index), and separately enters a swap contract with one or more banks. Those banks commit to paying the fund the exact performance of the target index, in exchange for the performance of the basket actually held.
+
+The fund thus respects the letter of PEA regulation (it holds eligible securities) while delivering the real performance of a non-eligible index to the holder.
+
+### The risk this introduces: counterparty risk
+
+This structure adds a risk that doesn't exist with a classic physical-replication ETF: if the bank on the other side of the swap defaults, the fund might not receive the promised performance. This is a real risk, but it's bounded by European UCITS regulation:
+
+- Exposure to a single counterparty is capped at 10% of the fund's net asset value.
+- Large issuers (iShares/BlackRock, Amundi, Lyxor...) generally diversify across several counterparties and collateralize the swap: assets are pledged against the exposure and revalued daily, to limit the loss in case of default.
+
+<Example title="What this actually looks like">
+An "MSCI World Swap UCITS ETF" eligible for a PEA holds, for example, a basket of liquid European stocks with no sector relationship to the MSCI World. A swap contract with one or more banks exchanges the performance of that basket for the performance of the MSCI World, daily. The fund holder sees MSCI World performance show up on their statement, with a residual, bounded, and generally low counterparty risk on top of ordinary market risk.
+</Example>
+
+<KeyTakeaway label="Key takeaway">
+If you hold a World or S&P 500 ETF inside a PEA, it's almost certainly a synthetic ETF. That's not a problem in itself: it's the only legal way to get that exposure inside this wrapper, and the associated counterparty risk is bounded by regulation. The real problem would be not knowing this risk exists.
+</KeyTakeaway>

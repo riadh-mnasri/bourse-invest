@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BourseInvest
 
-## Getting Started
+Guide pédagogique bilingue (FR/EN) sur les bases de la bourse, la fiscalité de l'investissement en France (PEA, compte-titres, assurance-vie) et la construction d'une routine d'investisseur saine. Pas un tracker, pas un calculateur : un site de contenu, dans l'esprit de [finance-for-engineers](https://github.com/riadh-mnasri/finance-for-engineers) mais pour l'investisseur particulier plutôt que l'ingénieur finance.
 
-First, run the development server:
+*[Read this in English](README.en.md)*
+
+## Contenu
+
+12 articles bilingues répartis en 4 modules :
+
+1. **Les bases** : qu'est-ce qu'un marché financier, actions/obligations/ETF, risque de marché vs perte permanente.
+2. **Enveloppes fiscales** : vue d'ensemble PEA/CTO/assurance-vie, le PEA en détail (éligibilité, réplication synthétique, risque de contrepartie), le CTO en complément.
+3. **Routine d'investisseur** : allocation core-satellite, DCA et versements programmés, biais comportementaux.
+4. **Conseils** : idées distillées de trois livres de référence (Père riche père pauvre, The Little Book of Common Sense Investing, The Psychology of Money), avec la source citée à chaque fois.
+
+Plus un glossaire de termes clés.
+
+## Ce que le site ne fait pas (encore)
+
+Pas de suivi de portefeuille personnel, pas de saisie de position, pas de conseil personnalisé (voir le disclaimer AMF en pied de page). Le contenu français est le premier centre d'intérêt ; le contenu anglais est traduit en parallèle mais n'a pas vocation à couvrir la fiscalité d'autres pays.
+
+## Stack
+
+- Next.js 16 (App Router, Turbopack) avec `src/`
+- Tailwind CSS v4 + `@tailwindcss/typography`
+- Contenu MDX (`@next/mdx`) avec composants pédagogiques dédiés (`Callout`, `Example`, `KeyTakeaway`, `Source`)
+- FR/EN et clair/sombre via `useSyncExternalStore` (pas de next-intl/next-themes)
+- Favicon et image Open Graph générés via `next/og`
+
+## Développement local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site tourne sur [http://localhost:3040](http://localhost:3040).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # build de production
+npm run lint    # eslint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Déploiement
 
-## Learn More
+Déployé en continu sur Vercel à chaque push sur `main`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 Riadh MNASRI. Tous droits réservés.

@@ -1,0 +1,38 @@
+Le PEA est l'enveloppe la plus utilisée par les investisseurs particuliers français, souvent sans que ses règles précises soient bien comprises. Trois points méritent d'être maîtrisés avant d'y verser un euro de plus.
+
+## Éligibilité : seuls les titres UE en direct
+
+Un PEA ne peut détenir en direct que des actions ou parts d'entreprises ayant leur siège dans l'Union européenne (ou l'Espace économique européen sous conditions). Concrètement : pas d'action Apple, Microsoft ou Nvidia en direct dans un PEA.
+
+Ça semble exclure toute exposition aux marchés américains ou asiatiques, mais ce n'est pas le cas grâce au mécanisme de réplication synthétique, développé plus bas.
+
+## Plafond et durée
+
+Le plafond de versement est fixé à 150 000€ (les gains au-delà ne comptent pas dans ce plafond, seuls les versements). Le PEA doit être conservé au moins 5 ans pour bénéficier de l'exonération d'impôt sur les plus-values (les prélèvements sociaux à 17,2% restent dus dans tous les cas). Un retrait avant 5 ans entraîne la clôture du plan dans la plupart des cas et la perte de l'avantage fiscal acquis.
+
+<Callout tone="warning">
+Un retrait anticipé n'est pas juste "moins avantageux", il clôture généralement le plan entier. Ce n'est pas un compte d'où on retire ponctuellement sans conséquence : c'est pensé pour être conservé sur la durée.
+</Callout>
+
+## Le point que presque personne ne connaît : la réplication synthétique
+
+C'est le point le plus important de cet article, directement lié à ce qui est probablement dans votre PEA si vous détenez un ETF Monde ou S&P 500.
+
+Puisque les actions américaines ne sont pas éligibles en direct dans un PEA, comment un ETF "S&P 500" ou "MSCI World" (qui contient environ 70% d'entreprises américaines) peut-il exister dans cette enveloppe ? Par un montage appelé **réplication synthétique** : le fonds détient réellement un panier de titres européens éligibles au PEA (souvent sans rapport direct avec l'indice visé), et signe en parallèle un contrat d'échange (swap) avec une ou plusieurs banques. Ces banques s'engagent à verser au fonds la performance exacte de l'indice ciblé, en échange de la performance du panier réellement détenu.
+
+Le fonds respecte donc la lettre de la réglementation PEA (il détient des titres éligibles) tout en offrant au porteur la performance réelle d'un indice non éligible.
+
+### Le risque que ça introduit : la contrepartie
+
+Ce montage ajoute un risque qui n'existe pas avec un ETF classique à réplication physique : si la banque contrepartie du swap fait défaut, le fonds pourrait ne pas recevoir la performance promise. C'est un risque réel, mais encadré par la réglementation européenne UCITS :
+
+- L'exposition à une seule contrepartie est plafonnée à 10% de la valeur nette du fonds.
+- Les grands émetteurs (iShares/BlackRock, Amundi, Lyxor...) diversifient généralement sur plusieurs contreparties et collatéralisent le swap : des actifs sont mis en gage en face de l'engagement et réévalués quotidiennement, pour limiter la perte en cas de défaut.
+
+<Example title="Ce que ça veut dire concrètement">
+Un ETF "MSCI World Swap UCITS ETF" éligible PEA détient, par exemple, un panier d'actions européennes liquides, sans rapport sectoriel avec le MSCI World. Un contrat de swap avec une ou plusieurs banques échange la performance de ce panier contre celle du MSCI World, quotidiennement. Le porteur du fonds voit la performance du MSCI World s'afficher sur son relevé, avec un risque de contrepartie résiduel, encadré et généralement faible, en plus du risque de marché normal.
+</Example>
+
+<KeyTakeaway>
+Si vous détenez un ETF Monde ou S&P 500 dans un PEA, c'est presque certainement un ETF synthétique. Ce n'est pas un problème en soi : c'est le seul moyen légal d'avoir cette exposition dans cette enveloppe, et le risque de contrepartie associé est encadré par la réglementation. Le vrai problème serait de ne pas savoir que ce risque existe.
+</KeyTakeaway>
